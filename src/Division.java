@@ -19,7 +19,7 @@ public class Division extends Equation {
     public Double doCalc() {
         Double result;
         result = first / second;
-        System.out.println(result);
+        System.out.println("The result is: " + Double.toString(result));
         return result;
     }
 }

@@ -113,7 +113,7 @@ public class Calculator {
             String saveResult = GetInput.getInput("Would you like to save this result? y/n:");
             if (saveResult.equalsIgnoreCase("y")) {
                 valueMem = stack.storeMem();
-                System.out.println(valueMem);
+
             }
             //check if user wishes to do another calculation
             choice = GetInput.getInput("Continue?  y/n: ");

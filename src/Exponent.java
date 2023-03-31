@@ -18,7 +18,7 @@ public class Exponent extends Equation {
     public Double doCalc() {
         Double result;
         result = Math.pow(first,second);
-        System.out.println(result);
+        System.out.println("The result is: " + Double.toString(result));
         return result;
 
     }
