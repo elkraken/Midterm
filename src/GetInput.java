@@ -74,15 +74,22 @@ public class GetInput {
             } else if (s.equalsIgnoreCase("E")) {
                 d = Math.exp(1);
                 test = true;
-            } else if (s.equalsIgnoreCase("MEM"))   {
+            } else if (s.equalsIgnoreCase("MEM")) {
                 //need to catch exception for calculations when MEM is null
                 try {
-                    d= x;
-                    test = true;
+                    if (x == null) {
+                        test = false;
+                    } else {
+                        d = x;
+                        test = true;
+                    }
                 }
-                catch (NullPointerException e) {
-                    test = false;
-                }
+
+                catch(NullPointerException e){
+                        test = false;
+                    }
+
+
             } else if (s.equalsIgnoreCase("HELP")) {
                 Help.numberHelp();
             } else if (s.equalsIgnoreCase("PRINT")) {
